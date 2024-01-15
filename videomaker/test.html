@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js" integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; width: 100vw;">
+  <div id="containerx" style="background-color: transparent;color: whitesmoke;">
+    <div id="container" style="width: 270px; height: 480px;">
+      <h1>HELLO</h1>
+    </div>
+  </div>
+</div>
+<!-- <video src="video.mp4" muted autoplay></video> -->
+<script> 
+  $(document).ready(function(){
+    $('#container').css({margin:'20px',padding:'20px',border:'2px solid black',position:'relative'});
+    $('h1').css({position:'absolute',top:'0%',left:'0%',padding:'20px'}); 
+    $('h1').animate({left: '20%',top: '40%', transform:'translate(-50%,-50%)',backgroundColor:'black'}, 2000);
+    $('h1').animate({color:'white'}, 1000);
+  });
+</script> 
+</body>
+</html>
